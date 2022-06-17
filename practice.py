@@ -4,7 +4,7 @@ import pickle
 import pandas as pd
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-df = pd.read_csv('C:/Users/admin/Downloads/credit_dataset.csv')
+df = pd.read_csv('credit_dataset.csv')
 df['FAMILY SIZE'] = df['FAMILY SIZE'].astype('int64')
 
 df.drop(df.columns[0], axis=1, inplace=True)
