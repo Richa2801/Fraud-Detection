@@ -64,7 +64,7 @@ def main():
             nums = [[CAR, INCOME, INCOME_TYPE, EDUCATION_TYPE, FAMILY_TYPE, PHONE, FAMILY_SIZE, BEGIN_MONTH, AGE, YEARS_EMPLOYED]]
             #nums.reshape(1, -1)
             if st.sidebar.button("Predict", key="classify"):
-                filename = 'C:/Users/admin/Downloads/PythonTutorials/LightGBM_model.pkl'
+                filename = 'LightGBM_model.pkl'
                 # load the model from disk
                 loaded_model = pickle.load(open(filename, 'rb'))
                 #accuracy = model.score(x_test, y_test)
